@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Appling CORS settings to all endpoints
-                        .allowedOrigins("http://localhost:5173" , "https://radiant-pony-8f4bf7.netlify.app/") // frontend URL
+                        .allowedOrigins("http://localhost:5173" , "http://54.197.197.218/fe/") // frontend URL
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
